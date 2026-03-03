@@ -42,18 +42,23 @@ Publications
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
    -->
+   
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and Leadership
-======
+<!-- Service and Leadership
+====== -->
 <!-- * **Project Lead**: Currently leading research projects for NeurIPS and EMNLP 2026 submissions
 * **Professional Affiliations**: Member of trustworthy AI research community focusing on GDPR compliance and data privacy -->
 
-Project as a Principal Investigator
+Scholarship and Fellowships
 ======
-* **Doctoral Student Research Grant**, Ministry of Science and ICT, Korea
-  * Project: Safe Generative Models (2023-2025)
+### Scholarship
+* **Youlchon AI Scholarship**, Youlchon AI Star, 2025
+* **National Science and Technology Scholarship** (full tuition), Ministry of Science, Korea, 2019-2020
+
+### Fellowship
+* **Doctoral Student Research Grant**, Ministry of Science and ICT, Korea (Graduate Research Fellowship in Science and Engineering), 2023-2025
