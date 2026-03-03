@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a **Postdoctoral Researcher** at **Nanyang Technological University (NTU)** in Singapore, hosted by [Prof. Jaehong Yoon](https://jaehongyoon.com/). I received my **Ph.D.** in Industrial Engineering from **Seoul National University (SNU)** in February 2026, where I was fortunately advised by [Prof. Jae-wook Lee](https://scholar.google.com/citations?user=teMdzbwAAAAJ).
+I am a **Postdoctoral Researcher** at **Nanyang Technological University (NTU)** in Singapore, hosted by [Prof. Jaehong Yoon](https://jaehong31.github.io/). I received my **Ph.D.** in Industrial Engineering from **Seoul National University (SNU)** in February 2026, where I was fortunately advised by [Prof. Jae-wook Lee](https://scholar.google.com/citations?user=teMdzbwAAAAJ).
 
 My research focuses on building **Trustworthy AI**, with a particular emphasis on ensuring the privacy, fairness, and robustness of machine learning systems. 
 
