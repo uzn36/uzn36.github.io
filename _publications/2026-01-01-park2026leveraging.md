@@ -1,11 +1,11 @@
 ---
 title: "Leveraging priors via diffusion bridge for time series generation"
 collection: publications
-permalink: /publication/2026-park2026leveraging
+category: conferences
+permalink: /publication/2026-01-01-park2026leveraging
 date: 2026-01-01
 venue: 'KDD 2026'
-category: conferences
-citation: 'Park, Jinseong and Lee, Seungyun and Jeong, Woojin and **Choi, Yujin** and Lee, Jaewook. (2026). "Leveraging priors via diffusion bridge for time series generation." *KDD 2026*.'
+paperurl: 'https://arxiv.org/abs/2501.00000'
+bibtexurl: '/files/park2026leveraging.bib'
+citation: 'Park, Jinseong, Lee, Seungyun, Jeong, Woojin, **Choi, Yujin**, Lee, Jaewook. (2026). &quot;Leveraging priors via diffusion bridge for time series generation.&quot; <i>KDD 2026</i>.'
 ---
-
- PhD Dissertation research and Trustworthy AI publications.

@@ -1,11 +1,11 @@
 ---
 title: "In-distribution public data synthesis with diffusion models for differentially private image classification"
 collection: publications
-permalink: /publication/2024-park2024distribution
+category: conferences
+permalink: /publication/2024-01-01-park2024distribution
 date: 2024-01-01
 venue: 'Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition'
-category: conferences
-citation: 'Park, Jinseong and **Choi, Yujin** and Lee, Jaewook. (2024). "In-distribution public data synthesis with diffusion models for differentially private image classification." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*.'
+paperurl: 'https://openaccess.thecvf.com/content/CVPR2024/html/Park_In-distribution_Public_Data_Synthesis_with_Diffusion_Models_for_Differentially_Private_CVPR_2024_paper.html'
+bibtexurl: '/files/park2024distribution.bib'
+citation: 'Park, Jinseong, **Choi, Yujin**, Lee, Jaewook. (2024). &quot;In-distribution public data synthesis with diffusion models for differentially private image classification.&quot; <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</i>.'
 ---
-
- PhD Dissertation research and Trustworthy AI publications.

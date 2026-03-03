@@ -1,11 +1,11 @@
 ---
 title: "Exploring diverse feature extractions for adversarial audio detection"
 collection: publications
-permalink: /publication/2023-choi2023exploring
+category: manuscripts
+permalink: /publication/2023-01-01-choi2023exploring
 date: 2023-01-01
 venue: 'IEEE Access'
-category: manuscripts
-citation: '**Choi, Yujin** and Park, Jinseong and Lee, Jaewook and Kim, Hoki. (2023). "Exploring diverse feature extractions for adversarial audio detection." *IEEE Access*.'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10005309/'
+bibtexurl: '/files/choi2023exploring.bib'
+citation: '**Choi, Yujin**, Park, Jinseong, Lee, Jaewook, Kim, Hoki. (2023). &quot;Exploring diverse feature extractions for adversarial audio detection.&quot; <i>IEEE Access</i>.'
 ---
-
- PhD Dissertation research and Trustworthy AI publications.

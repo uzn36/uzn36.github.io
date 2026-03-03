@@ -1,11 +1,11 @@
 ---
 title: "Efficient homomorphic encryption framework for privacy-preserving regression"
 collection: publications
-permalink: /publication/2023-byun2023efficient
+category: manuscripts
+permalink: /publication/2023-01-01-byun2023efficient
 date: 2023-01-01
 venue: 'Applied Intelligence'
-category: manuscripts
-citation: 'Byun, Junyoung and Park, Saerom and **Choi, Yujin** and Lee, Jaewook. (2023). "Efficient homomorphic encryption framework for privacy-preserving regression." *Applied Intelligence*.'
+paperurl: 'https://link.springer.com/article/10.1007/s10489-022-04015-z'
+bibtexurl: '/files/byun2023efficient.bib'
+citation: 'Byun, Junyoung, Park, Saerom, **Choi, Yujin**, Lee, Jaewook. (2023). &quot;Efficient homomorphic encryption framework for privacy-preserving regression.&quot; <i>Applied Intelligence</i>.'
 ---
-
- PhD Dissertation research and Trustworthy AI publications.

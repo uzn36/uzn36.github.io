@@ -1,11 +1,11 @@
 ---
 title: "Efficient differentially private kernel support vector classifier for multi-class classification"
 collection: publications
-permalink: /publication/2023-park2023efficient
+category: manuscripts
+permalink: /publication/2023-01-01-park2023efficient
 date: 2023-01-01
 venue: 'Information Sciences'
-category: manuscripts
-citation: 'Park, Jinseong and **Choi, Yujin** and Byun, Junyoung and Lee, Jaewook and Park, Saerom. (2023). "Efficient differentially private kernel support vector classifier for multi-class classification." *Information Sciences*.'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0020025522011951'
+bibtexurl: '/files/park2023efficient.bib'
+citation: 'Park, Jinseong, **Choi, Yujin**, Byun, Junyoung, Lee, Jaewook, Park, Saerom. (2023). &quot;Efficient differentially private kernel support vector classifier for multi-class classification.&quot; <i>Information Sciences</i>.'
 ---
-
- PhD Dissertation research and Trustworthy AI publications.

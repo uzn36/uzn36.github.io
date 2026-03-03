@@ -1,11 +1,11 @@
 ---
 title: "Differentially private sharpness-aware training"
 collection: publications
-permalink: /publication/2023-park2023differentially
+category: conferences
+permalink: /publication/2023-01-01-park2023differentially
 date: 2023-01-01
 venue: 'International Conference on Machine Learning'
-category: conferences
-citation: 'Park, Jinseong and Kim, Hoki and **Choi, Yujin** and Lee, Jaewook. (2023). "Differentially private sharpness-aware training." *International Conference on Machine Learning*.'
+paperurl: 'https://proceedings.mlr.press/v202/park23o.html'
+bibtexurl: '/files/park2023differentially.bib'
+citation: 'Park, Jinseong, Kim, Hoki, **Choi, Yujin**, Lee, Jaewook. (2023). &quot;Differentially private sharpness-aware training.&quot; <i>International Conference on Machine Learning</i>.'
 ---
-
- PhD Dissertation research and Trustworthy AI publications.
