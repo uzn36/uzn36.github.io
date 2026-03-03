@@ -11,35 +11,24 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D. in Industrial Engineering**, Seoul National University, Feb 2026
+  * Advisor: Prof. Jaewook Lee
+  * Dissertation: *Trustworthy Generative Model*
+* **B.S. in Industrial Engineering and Mathematics**, Yonsei University, Feb 2021
+  * Period: Mar 2017 – Feb 2021
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Postdoctoral Researcher** (Feb 2026 – Present)
+  * Nanyang Technological University (NTU), Singapore
+  * Host: Prof. Jaehong Yoon
+  * Focus: Trustworthy AI
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Specialization**: Trustworthy AI, Privacy-Preserving Machine Learning, Machine Unlearning
+* **Generative Models**: Diffusion Models, Flow Matching, LLM Privacy
+* **Frameworks**: PyTorch, Deep Learning for Healthcare (Medical Imaging)
 
 Publications
 ======
@@ -47,18 +36,24 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
+   -->
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Service and Leadership
 ======
-* Currently signed in to 43 different slack teams
+<!-- * **Project Lead**: Currently leading research projects for NeurIPS and EMNLP 2026 submissions
+* **Professional Affiliations**: Member of trustworthy AI research community focusing on GDPR compliance and data privacy -->
+
+Project as a Principal Investigator
+======
+* **Doctoral Student Research Grant**, Ministry of Science and ICT, Korea
+  * Project: Safe Generative Models (2023-2025)
