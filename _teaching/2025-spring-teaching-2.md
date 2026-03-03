@@ -4,5 +4,17 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2025-fall-teaching
 venue: "Soongsil University, School of Finance"
-date: 2024-09-01
+date: 2025-03-01
 location: "Seoul, Korea"
+---
+
+<!-- This is a description of a teaching experience. You can use markdown like any other post. -->
+
+<!-- Heading 1
+======
+
+Heading 2
+======
+
+Heading 3
+====== -->
