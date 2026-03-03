@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Yujin Choi"
   pronouns         : "She/Her" # example: "she/her"  
-  bio              : "Postdoctral Researcher at NTU. I received my Ph.D. from Seoul National University, advised by prof. Jaewook Lee. My research focuses on Trustworthy AI."
+  bio              : "Postdoctroal Researcher at NTU, Focuses on Trustworthy AI" #"Postdoctral Researcher at NTU. I received my Ph.D. from Seoul National University, advised by prof. Jaewook Lee. My research focuses on Trustworthy AI."
   location         : "Korea/Singapore"
-  employer         : "Ulsan National Institute of Science & Technology(UNIST)/Nanyang Technological University (NTU)"
+  employer         : "UNIST/NTU" #Ulsan National Institute of Science & Technology(UNIST)/Nanyang Technological University (NTU)
   uri              : # URL
   email            : "uzn36@unist.ac.kr" 
 
