@@ -1,152 +1,187 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Yujin Choi",
+    "email": "uzn36@unist.ac.kr",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://uzn36.github.io",
+    "summary": "Postdoctoral Researcher at Nanyang Technological University (NTU). Focusing on Trustworthy AI, including privacy-preserving machine learning and machine unlearning.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Singapore",
+      "countryCode": "SG"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=3u0-O2sAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0001-9150-704X"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "uzn36",
+        "url": "https://github.com/uzn36"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "uzn",
+        "url": "https://www.linkedin.com/in/uzn"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Nanyang Technological University (NTU)",
+      "position": "Postdoctoral Researcher",
+      "startDate": "2026-02-26",
+      "summary": "Collaborating with Prof. Jaehong Yoon on trustworthy machine learning."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "Seoul National University",
+      "area": "Industrial Engineering",
+      "studyType": "Ph.D.",
+      "endDate": "2026-02-25",
+      "summary": "Advised by Prof. Jaewook Lee. Dissertation: Trustworthy Generative Model"
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "institution": "Yonsei University",
+      "area": "Industrial Engineering and Mathematics",
+      "studyType": "B.S.",
+      "startDate": "2017-03-02",
+      "endDate": "2021-02-26"
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Differentially Private Upsampling for Enhanced Anomaly Detection in Imbalanced Data",
+      "publisher": "Engineering Applications of Artificial Intelligence",
+      "releaseDate": "2026-01-01",
+      "summary": "Choi, Yujin, Park, Jinseong, Park, Youngjoo, Lee, Jaewook, and Byun, Junyoung"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Leveraging priors via diffusion bridge for time series generation",
+      "publisher": "KDD 2026",
+      "releaseDate": "2026-01-01",
+      "summary": "Park, Jinseong, Lee, Seungyun, Jeong, Woojin, **Yujin Choi**, and Lee, Jaewook"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Safeguarding Privacy of Retrieval Data against Membership Inference Attacks: Is This Query Too Close to Home?",
+      "publisher": "EMNLP Findings 2025",
+      "releaseDate": "2025-10-01",
+      "summary": "**Yujin Choi**, Park, Youngjoo, Byun, Junyoung, Lee, Jaewook, and Park, Jinseong"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Multi-Class Support Vector Machine with Differential Privacy",
+      "publisher": "NeurIPS 2025",
+      "releaseDate": "2025-01-01",
+      "summary": "Park, Jinseong, **Yujin Choi**, and Lee, Jaewook"
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Temporal consistency ensemble empirical mode decomposition for forecasting practical metal price",
+      "publisher": "Engineering Applications of Artificial Intelligence",
+      "releaseDate": "2025-01-01",
+      "summary": "**Yujin Choi**, Kim, Dongbin, and Lee, Jaewook"
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
+      "name": "Improving the utility of differentially private clustering through dynamical processing",
+      "publisher": "Pattern Recognition",
+      "releaseDate": "2025-01-01",
+      "summary": "Byun, Junyoung, **Yujin Choi**, and Lee, Jaewook"
     },
     {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Leveraging Programmatically Generated Synthetic Data for Differentially Private Diffusion Training",
+      "publisher": "arXiv preprint arXiv:2412.09842",
+      "releaseDate": "2024-12-01",
+      "summary": "**Yujin Choi**, Park, Jinseong, Byun, Junyoung, and Lee, Jaewook"
+    },
+    {
+      "name": "Bayesnam: Leveraging inconsistency for reliable explanations",
+      "publisher": "arXiv preprint arXiv:2411.06367",
+      "releaseDate": "2024-11-01",
+      "summary": "Kim, Hoki, Park, Jinseong, **Yujin Choi**, Lee, Seungyun, and Lee, Jaewook"
+    },
+    {
+      "name": "Privacy-preserving inference resistant to model extraction attacks",
+      "publisher": "Expert Systems with Applications",
+      "releaseDate": "2024-01-01",
+      "summary": "Byun, Junyoung, **Yujin Choi**, Lee, Jaewook, and Park, Saerom"
+    },
+    {
+      "name": "In-distribution public data synthesis with diffusion models for differentially private image classification",
+      "publisher": "CVPR",
+      "releaseDate": "2024-01-01",
+      "summary": "Park, Jinseong, **Yujin Choi**, and Lee, Jaewook"
+    },
+    {
+      "name": "Fair Sampling in Diffusion Models through Switching Mechanism",
+      "publisher": "AAAI",
+      "releaseDate": "2024-01-01",
+      "summary": "**Yujin Choi**, Park, Jinseong, Kim, Hoki, Lee, Jaewook, and Park, Saerom"
+    },
+    {
+      "name": "Fantastic robustness measures: The secrets of robust generalization",
+      "publisher": "NeurIPS",
+      "releaseDate": "2023-01-01",
+      "summary": "Kim, Hoki, Park, Jinseong, **Yujin Choi**, and Lee, Jaewook"
+    },
+    {
+      "name": "Differentially private sharpness-aware training",
+      "publisher": "ICML",
+      "releaseDate": "2023-01-01",
+      "summary": "Park, Jinseong, Kim, Hoki, **Yujin Choi**, and Lee, Jaewook"
+    },
+    {
+      "name": "Fast sharpness-aware training for periodic time series classification and forecasting",
+      "publisher": "Applied Soft Computing",
+      "releaseDate": "2023-01-01",
+      "summary": "Park, Jinseong, Kim, Hoki, **Yujin Choi**, Lee, Woojin, and Lee, Jaewook"
+    },
+    {
+      "name": "Stability analysis of sharpness-aware minimization",
+      "publisher": "arXiv preprint arXiv:2301.06308",
+      "releaseDate": "2023-01-01",
+      "summary": "Kim, Hoki, Park, Jinseong, **Yujin Choi**, and Lee, Jaewook"
+    },
+    {
+      "name": "Exploring the effect of multi-step ascent in sharpness-aware minimization",
+      "publisher": "arXiv preprint arXiv:2302.10181",
+      "releaseDate": "2023-01-01",
+      "summary": "Kim, Hoki, Park, Jinseong, **Yujin Choi**, Lee, Woojin, and Lee, Jaewook"
+    },
+    {
+      "name": "Exploring diverse feature extractions for adversarial audio detection",
+      "publisher": "IEEE Access",
+      "releaseDate": "2023-01-01",
+      "summary": "**Yujin Choi**, Park, Jinseong, Lee, Jaewook, and Kim, Hoki"
+    },
+    {
+      "name": "Efficient differentially private kernel support vector classifier for multi-class classification",
+      "publisher": "Information Sciences",
+      "releaseDate": "2023-01-01",
+      "summary": "Park, Jinseong, **Yujin Choi**, Byun, Junyoung, Lee, Jaewook, and Park, Saerom"
+    },
+    {
+      "name": "Efficient homomorphic encryption framework for privacy-preserving regression",
+      "publisher": "Applied Intelligence",
+      "releaseDate": "2023-01-01",
+      "summary": "Byun, Junyoung, Park, Saerom, **Yujin Choi**, and Lee, Jaewook"
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "course": "Financial Machine Learning",
+      "institution": "Soongsil University",
+      "date": "2025-03-02",
+      "role": "Lecturer (1st semester, 2025)"
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "course": "Financial Programming 2",
+      "institution": "Soongsil University",
+      "date": "2024-09-01",
+      "role": "Lecturer (2nd semester, 2024)"
     }
   ]
 }
