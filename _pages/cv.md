@@ -13,22 +13,25 @@ Education
 ======
 * **Ph.D. in Industrial Engineering**, Seoul National University, Feb 2026
   * Advisor: Prof. Jaewook Lee
-  * Dissertation: *Trustworthy Generative Model*
+  * Dissertation: *Trustworthy Generative Model: from privacy to fairness*
 * **B.S. in Industrial Engineering and Mathematics**, Yonsei University, Feb 2021
-  * Period: Mar 2017 – Feb 2021
+  <!-- * Period: Mar 2017 – Feb 2021 -->
 
 Work Experience
 ======
-* **Postdoctoral Researcher** (Feb 2026 – Present)
+* **Postdoctoral Researcher** (March 2026 – Present)
+  * Ulsan National Institute of Science & Technology (UNIST), Korea
+
+* **Postdoctoral Researcher** (April 2026 – Present)
   * Nanyang Technological University (NTU), Singapore
   * Host: Prof. Jaehong Yoon
-  * Focus: Trustworthy AI
+  <!-- * Focus: Trustworthy AI -->
 
-Skills
+Research Interests
 ======
-* **Specialization**: Trustworthy AI, Privacy-Preserving Machine Learning, Machine Unlearning
-* **Generative Models**: Diffusion Models, Flow Matching, LLM Privacy
-* **Frameworks**: PyTorch, Deep Learning for Healthcare (Medical Imaging)
+* **Trustworthy AI**: Privacy, Fairness, Robustness
+* **Generative Models**: Diffusion Model, Flow Matching, Large Language Model
+<!-- * **Frameworks**: PyTorch, Deep Learning for Healthcare (Medical Imaging) -->
 
 Publications
 ======
@@ -42,7 +45,7 @@ Publications
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
    -->
-   
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
