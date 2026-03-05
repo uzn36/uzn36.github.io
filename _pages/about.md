@@ -21,6 +21,10 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 * **B.S. in Industrial Engineering and Mathematics**, Yonsei University, 2021
 
 ## News
-<!-- * **[Feb. 2026]** Successfully awarded my Ph.D. from Seoul National University.
-* **[Feb. 2026]** Joined NTU as a Postdoctoral Researcher under the supervision of Prof. Jaehong Yoon.
-* **[Dec. 2025]** Our work on privacy-preserving retrieval was published in *EMNLP Findings 2025*. -->
+* **[Mar. 2026]** Joined **UNIST** as a Postdoctoral Researcher.
+* **[Feb. 2026]** Successfully awarded my Ph.D. from Seoul National University. -->
+* **[Nov. 2025]** One paper got accepted to *KDD 2026*. -->
+* **[Nov. 2025]** One paper got accepted to *Engineering Applications of Artificial Intelligence*. -->
+* **[Sep. 2025]** One paper got accepted to *NeurIPS 2025*. -->
+* **[Aug. 2025]** One paper got accepted to *EMNLP Findings 2025*. -->
+* **[Jun. 2025]** One paper got accepted to *Engineering Applications of Artificial Intelligence*. -->
