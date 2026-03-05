@@ -21,6 +21,7 @@ Work Experience
 ======
 * **Postdoctoral Researcher** (March 2026 – Present)
   * Ulsan National Institute of Science & Technology (UNIST), Korea
+  * Mentor: Prof. Saerom Park
 
 * **Postdoctoral Researcher** (April 2026 – Present)
   * Nanyang Technological University (NTU), Singapore
