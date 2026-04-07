@@ -23,7 +23,7 @@ main:
   #   url: /year-archive/
     
   - title: "CV"
-    url: /_pdf/CV_yujinchoi_2604.pdf
+    url: /assets/pdf/CV_yujinchoi_2604.pdf
     
   # - title: "CV"
   #   url: /cv-json/
