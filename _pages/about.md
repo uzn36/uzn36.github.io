@@ -22,7 +22,7 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 
 ## News
 * **[May. 2026]** One paper got accepted to *ICML 2026*. 
-* **[April. 2026]** Joined *NTU* as a Postdoctoral Researcher.
+* **[Apr. 2026]** Joined *NTU* as a Postdoctoral Researcher.
 * **[Mar. 2026]** Joined *UNIST* as a Postdoctoral Researcher.
 * **[Feb. 2026]** Successfully awarded my Ph.D. from *Seoul National University*. 
 * **[Nov. 2025]** One paper got accepted to *KDD 2026*. 
