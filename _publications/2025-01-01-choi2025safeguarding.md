@@ -17,5 +17,6 @@ authors:
 selected: true
 thumbnail: /images/pubs/25_EMNLP_Safeguarding.png
 links:
+  paper: "https://aclanthology.org/2025.findings-emnlp.438/"
   bibtex: "/files/choi2025safeguarding.bib"
 ---
