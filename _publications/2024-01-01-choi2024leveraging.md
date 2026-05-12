@@ -6,13 +6,14 @@ date: 2024-12-13
 year: 2024
 status: preprint
 type: preprint
-venue: "arXiv:2412.09842"
+venue: "arXiv"
 venue_full: "arXiv preprint"
 authors:
   - Yujin Choi
   - Jinseong Park
   - Junyoung Byun
   - Jaewook Lee
+thumbnail: /images/pubs/24_programmatically.png
 links:
   arxiv: "https://arxiv.org/abs/2412.09842"
   paper: "https://arxiv.org/abs/2412.09842"
