@@ -1,0 +1,12 @@
+# Manual (non-paper) news items.
+# Paper acceptances are auto-generated from _publications/*.md (status: accepted/published).
+# Each entry: date (YYYY-MM-DD), text (markdown allowed).
+
+- date: 2026-04-01
+  text: "Joined *NTU* as a Postdoctoral Researcher."
+
+- date: 2026-03-01
+  text: "Joined *UNIST* as a Postdoctoral Researcher."
+
+- date: 2026-02-01
+  text: "Successfully awarded my Ph.D. from *Seoul National University*."

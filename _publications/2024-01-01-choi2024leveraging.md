@@ -1,11 +1,19 @@
 ---
 title: "Leveraging Programmatically Generated Synthetic Data for Differentially Private Diffusion Training"
 collection: publications
-category: preprints
 permalink: /publication/2024-01-01-choi2024leveraging
-date: 2024-01-01
-venue: 'arXiv preprint arXiv:2412.09842'
-paperurl: 'https://arxiv.org/abs/2412.09842'
-bibtexurl: '/files/choi2024leveraging.bib'
-citation: '<b>Choi, Yujin</b>, Park, Jinseong, Byun, Junyoung, Lee, Jaewook. (2024). &quot;Leveraging Programmatically Generated Synthetic Data for Differentially Private Diffusion Training.&quot; <i>arXiv preprint arXiv:2412.09842</i>.'
+date: 2024-12-13
+year: 2024
+status: preprint
+venue: "arXiv:2412.09842"
+venue_full: "arXiv preprint"
+authors:
+  - Yujin Choi
+  - Jinseong Park
+  - Junyoung Byun
+  - Jaewook Lee
+links:
+  arxiv: "https://arxiv.org/abs/2412.09842"
+  paper: "https://arxiv.org/abs/2412.09842"
+  bibtex: "/files/choi2024leveraging.bib"
 ---

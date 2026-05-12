@@ -1,0 +1,57 @@
+{% assign pub = include.pub %}
+
+{% comment %} Detect equal-contribution markers in authors {% endcomment %}
+{% assign has_equal = false %}
+{% for a in pub.authors %}
+  {% if a contains "*" %}{% assign has_equal = true %}{% endif %}
+{% endfor %}
+
+<div class="pub-card">
+  {% if pub.thumbnail %}
+    <div class="pub-thumb">
+      <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title | escape }}">
+    </div>
+  {% else %}
+    <div class="pub-thumb pub-thumb--placeholder">
+      <span>{{ pub.venue | default: pub.year }}</span>
+    </div>
+  {% endif %}
+
+  <div class="pub-info">
+    <div class="pub-title">
+      {% if pub.links.paper %}
+        <a href="{{ pub.links.paper }}">{{ pub.title }}</a>
+      {% elsif pub.links.arxiv %}
+        <a href="{{ pub.links.arxiv }}">{{ pub.title }}</a>
+      {% else %}
+        {{ pub.title }}
+      {% endif %}
+    </div>
+
+    <div class="pub-authors">
+      {% for author in pub.authors %}
+        {% assign clean = author | remove: "*" | strip %}
+        {% if clean == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+
+    <div class="pub-venue-line">
+      <span class="pub-venue-badge">{{ pub.venue }}</span>
+      {% if pub.status == "preprint" %}<span class="pub-badge pub-badge--preprint">Preprint</span>{% endif %}
+      {% if pub.status == "accepted" %}<span class="pub-badge pub-badge--accepted">To appear</span>{% endif %}
+      {% if pub.note %}<span class="pub-badge pub-badge--note">{{ pub.note }}</span>{% endif %}
+      {% if has_equal %}<span class="pub-equal">* Equal contribution</span>{% endif %}
+    </div>
+
+    <div class="pub-links">
+      {% if pub.links.paper %}<a href="{{ pub.links.paper }}" class="pub-link"><i class="fa fa-file-pdf"></i> Paper</a>{% endif %}
+      {% if pub.links.arxiv %}<a href="{{ pub.links.arxiv }}" class="pub-link"><i class="ai ai-arxiv"></i> arXiv</a>{% endif %}
+      {% if pub.links.code %}<a href="{{ pub.links.code }}" class="pub-link"><i class="fa fa-code"></i> Code</a>{% endif %}
+      {% if pub.links.project %}<a href="{{ pub.links.project }}" class="pub-link"><i class="fa fa-globe"></i> Project</a>{% endif %}
+      {% if pub.links.slides %}<a href="{{ pub.links.slides }}" class="pub-link"><i class="fa fa-desktop"></i> Slides</a>{% endif %}
+      {% if pub.links.poster %}<a href="{{ pub.links.poster }}" class="pub-link"><i class="fa fa-image"></i> Poster</a>{% endif %}
+      {% if pub.links.video %}<a href="{{ pub.links.video }}" class="pub-link"><i class="fa fa-video"></i> Video</a>{% endif %}
+      {% if pub.links.bibtex %}<a href="{{ pub.links.bibtex | relative_url }}" class="pub-link"><i class="fa fa-quote-right"></i> BibTeX</a>{% endif %}
+    </div>
+  </div>
+</div>

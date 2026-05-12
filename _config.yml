@@ -82,16 +82,8 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  # books:
-  #   title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-  preprints:
-    title: 'Preprints (arXiv)'
+# Publications are managed via per-file frontmatter (status, year, venue, authors, links).
+# See _publications/*.md and _includes/publication-card.html.
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)

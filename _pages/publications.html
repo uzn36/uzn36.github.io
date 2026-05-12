@@ -6,31 +6,36 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p class="wordwrap">
+    <i class="ai ai-google-scholar"></i>
+    Full list also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
+    <span style="margin-left:0.6em;"><strong>*</strong> Equal contribution.</span>
+  </p>
 {% endif %}
 
-{% include base_path %}
+{% comment %}
+  Sort publications by date (descending). Then group by year for display.
+  We rely on the `date` field of each publication; the `year` field overrides
+  the display group when set (useful when accept date and venue year differ).
+{% endcomment %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+{% assign all_pubs = site.publications | sort: 'date' | reverse %}
+{% assign years_seen = "" | split: "" %}
+
+{% comment %} Collect distinct display years in sort order {% endcomment %}
+{% for pub in all_pubs %}
+  {% assign display_year = pub.year | default: pub.date | date: "%Y" %}
+  {% unless years_seen contains display_year %}
+    {% assign years_seen = years_seen | push: display_year %}
+  {% endunless %}
+{% endfor %}
+
+{% for year in years_seen %}
+  <h2 class="pub-year-heading">{{ year }}</h2>
+  {% for pub in all_pubs %}
+    {% assign display_year = pub.year | default: pub.date | date: "%Y" %}
+    {% if display_year == year %}
+      {% include publication-card.html pub=pub %}
+    {% endif %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+{% endfor %}

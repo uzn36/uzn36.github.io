@@ -1,0 +1,38 @@
+{% comment %}
+  Builds a unified News feed by merging:
+    1. Publications with status "accepted" or "published" (one event each).
+    2. Manual entries in _data/news.yml (joins, awards, etc.).
+  Events are sorted descending by date and capped at `limit` (default 10).
+  Usage: {% include news-feed.html limit=10 %}
+{% endcomment %}
+
+{% assign news_limit = include.limit | default: 10 %}
+{% assign events = "" | split: "" %}
+
+{% for pub in site.publications %}
+  {% if pub.status == "accepted" or pub.status == "published" %}
+    {% if pub.news_text %}
+      {% assign text = pub.news_text %}
+    {% else %}
+      {% capture text %}One paper got accepted to *{{ pub.venue }}*.{% endcapture %}
+    {% endif %}
+    {% capture event %}{{ pub.date | date: "%Y-%m-%d" }}|||{{ text }}{% endcapture %}
+    {% assign events = events | push: event %}
+  {% endif %}
+{% endfor %}
+
+{% for n in site.data.news %}
+  {% capture event %}{{ n.date | date: "%Y-%m-%d" }}|||{{ n.text }}{% endcapture %}
+  {% assign events = events | push: event %}
+{% endfor %}
+
+{% assign events = events | sort | reverse %}
+
+<ul class="news-feed">
+  {% for e in events limit: news_limit %}
+    {% assign parts = e | split: "|||" %}
+    {% assign date_str = parts[0] %}
+    {% assign text = parts[1] %}
+    <li><span class="news-date">[{{ date_str | date: "%m. %Y" }}]</span> {{ text | markdownify | remove: "<p>" | remove: "</p>" }}</li>
+  {% endfor %}
+</ul>
