@@ -21,13 +21,13 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 * **B.S. in Industrial Engineering and Mathematics**, Yonsei University, 2021
 
 ## News
-* **[May. 2026]** One paper got accepted to *ICML 2026*. 
-* **[Apr. 2026]** Joined *NTU* as a Postdoctoral Researcher.
-* **[Mar. 2026]** Joined *UNIST* as a Postdoctoral Researcher.
-* **[Feb. 2026]** Successfully awarded my Ph.D. from *Seoul National University*. 
-* **[Nov. 2025]** One paper got accepted to *KDD 2026*. 
-* **[Nov. 2025]** One paper got accepted to *Engineering Applications of Artificial Intelligence*. 
-* **[Sep. 2025]** One paper got accepted to *NeurIPS 2025*. 
-* **[Aug. 2025]** One paper got accepted to *EMNLP Findings 2025*. 
-* **[Jun. 2025]** One paper got accepted to *Engineering Applications of Artificial Intelligence*. 
+* **[05. 2026]** One paper got accepted to *ICML 2026*. 
+* **[04. 2026]** Joined *NTU* as a Postdoctoral Researcher.
+* **[03. 2026]** Joined *UNIST* as a Postdoctoral Researcher.
+* **[02. 2026]** Successfully awarded my Ph.D. from *Seoul National University*. 
+* **[11. 2025]** One paper got accepted to *KDD 2026*. 
+* **[11. 2025]** One paper got accepted to *Engineering Applications of Artificial Intelligence*. 
+* **[09. 2025]** One paper got accepted to *NeurIPS 2025*. 
+* **[08. 2025]** One paper got accepted to *EMNLP Findings 2025*. 
+* **[06. 2025]** One paper got accepted to *Engineering Applications of Artificial Intelligence*. 
 * ...
