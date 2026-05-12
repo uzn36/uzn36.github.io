@@ -16,7 +16,7 @@ authors:
   - Jaewook Lee
 thumbnail: /images/pubs/26_KDD_Timebridege.png
 links:
-  arxiv: "https://arxiv.org/abs/2501.00000"
-  paper: "https://arxiv.org/abs/2501.00000"
+  arxiv: "https://arxiv.org/abs/2408.06672"
+  paper: "https://arxiv.org/abs/2408.06672"
   bibtex: "/files/park2026leveraging.bib"
 ---

@@ -15,8 +15,7 @@ authors:
   - Jaewook Lee
   - Jinseong Park
 selected: true
+thumbnail: /images/pubs/25_EMNLP_Safeguarding.png
 links:
-  arxiv: "https://arxiv.org/abs/2408.06672"
-  paper: "https://arxiv.org/abs/2408.06672"
   bibtex: "/files/choi2025safeguarding.bib"
 ---
