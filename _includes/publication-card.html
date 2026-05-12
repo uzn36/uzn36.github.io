@@ -6,6 +6,15 @@
   {% if a contains "*" %}{% assign has_equal = true %}{% endif %}
 {% endfor %}
 
+{% comment %} Map type → letter/label for the colored type badge {% endcomment %}
+{% case pub.type %}
+  {% when "conference" %}{% assign type_letter = "C" %}{% assign type_label = "Conference" %}
+  {% when "journal" %}{% assign type_letter = "J" %}{% assign type_label = "Journal" %}
+  {% when "workshop" %}{% assign type_letter = "W" %}{% assign type_label = "Workshop" %}
+  {% when "preprint" %}{% assign type_letter = "P" %}{% assign type_label = "Preprint" %}
+  {% else %}{% assign type_letter = "" %}{% assign type_label = "" %}
+{% endcase %}
+
 <div class="pub-card">
   {% if pub.thumbnail %}
     <div class="pub-thumb">
@@ -18,14 +27,9 @@
   {% endif %}
 
   <div class="pub-info">
-    <div class="pub-title">
-      {% if pub.links.paper %}
-        <a href="{{ pub.links.paper }}">{{ pub.title }}</a>
-      {% elsif pub.links.arxiv %}
-        <a href="{{ pub.links.arxiv }}">{{ pub.title }}</a>
-      {% else %}
-        {{ pub.title }}
-      {% endif %}
+    <div class="pub-title-line">
+      {% if type_letter %}<span class="pub-type pub-type--{{ pub.type }}" title="{{ type_label }}">{{ type_letter }}</span>{% endif %}
+      <span class="pub-title">{{ pub.title }}</span>
     </div>
 
     <div class="pub-authors">
@@ -36,8 +40,7 @@
     </div>
 
     <div class="pub-venue-line">
-      <span class="pub-venue-badge">{{ pub.venue }}</span>
-      {% if pub.status == "preprint" %}<span class="pub-badge pub-badge--preprint">Preprint</span>{% endif %}
+      <span class="pub-venue">{{ pub.venue }}</span>
       {% if pub.status == "accepted" %}<span class="pub-badge pub-badge--accepted">To appear</span>{% endif %}
       {% if pub.note %}<span class="pub-badge pub-badge--note">{{ pub.note }}</span>{% endif %}
       {% if has_equal %}<span class="pub-equal">* Equal contribution</span>{% endif %}

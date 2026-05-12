@@ -11,20 +11,26 @@ author_profile: true
     Full list also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
     <span style="margin-left:0.6em;"><strong>*</strong> Equal contribution.</span>
   </p>
+  <p class="pub-legend">
+    <span class="pub-type pub-type--conference">C</span> Conference
+    <span class="pub-type pub-type--journal">J</span> Journal
+    <span class="pub-type pub-type--workshop">W</span> Workshop
+    <span class="pub-type pub-type--preprint">P</span> Preprint
+  </p>
 {% endif %}
 
 {% comment %}
-  Sort publications by date (descending). Then group by year for display.
-  We rely on the `date` field of each publication; the `year` field overrides
-  the display group when set (useful when accept date and venue year differ).
+  Sort all publications by `date` (chronological), descending.
+  Group by display year: use `year` field if set, else fall back to year-of-date.
+  We use `capture` for display_year to ensure string comparison works
+  (frontmatter `year:` is parsed as integer by YAML; mixing int and string breaks `contains`).
 {% endcomment %}
 
 {% assign all_pubs = site.publications | sort: 'date' | reverse %}
 {% assign years_seen = "" | split: "" %}
 
-{% comment %} Collect distinct display years in sort order {% endcomment %}
 {% for pub in all_pubs %}
-  {% assign display_year = pub.year | default: pub.date | date: "%Y" %}
+  {% capture display_year %}{% if pub.year %}{{ pub.year }}{% else %}{{ pub.date | date: "%Y" }}{% endif %}{% endcapture %}
   {% unless years_seen contains display_year %}
     {% assign years_seen = years_seen | push: display_year %}
   {% endunless %}
@@ -33,8 +39,8 @@ author_profile: true
 {% for year in years_seen %}
   <h2 class="pub-year-heading">{{ year }}</h2>
   {% for pub in all_pubs %}
-    {% assign display_year = pub.year | default: pub.date | date: "%Y" %}
-    {% if display_year == year %}
+    {% capture this_year %}{% if pub.year %}{{ pub.year }}{% else %}{{ pub.date | date: "%Y" }}{% endif %}{% endcapture %}
+    {% if this_year == year %}
       {% include publication-card.html pub=pub %}
     {% endif %}
   {% endfor %}

@@ -5,6 +5,7 @@ permalink: /publication/2026-01-01-choi2026differentially
 date: 2025-11-20
 year: 2026
 status: published
+type: journal
 venue: "EAAI"
 venue_full: "Engineering Applications of Artificial Intelligence"
 authors:
@@ -13,6 +14,7 @@ authors:
   - Youngjoo Park
   - Jaewook Lee
   - Junyoung Byun
+thumbnail: /images/pubs/26_EAAI_DPupsampling.png
 links:
   paper: "https://doi.org/10.1016/j.engappai.2025.113124"
   bibtex: "/files/choi2026differentially.bib"

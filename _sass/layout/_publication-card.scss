@@ -11,6 +11,15 @@
   color: var(--global-text-color);
 }
 
+.pub-legend {
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+  margin: 0.4em 0 1em;
+
+  .pub-type { margin-right: 0.25em; margin-left: 0.8em; }
+  .pub-type:first-of-type { margin-left: 0; }
+}
+
 .pub-card {
   display: flex;
   gap: 1em;
@@ -53,18 +62,39 @@
   min-width: 0;
 }
 
+.pub-title-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-bottom: 0.25em;
+}
+
 .pub-title {
   font-weight: 600;
   font-size: 1.05em;
   line-height: 1.35;
-  margin-bottom: 0.25em;
+  color: var(--global-text-color);
+}
 
-  a {
-    color: var(--global-text-color);
-    text-decoration: none;
+/* Colored letter badge for venue type */
+.pub-type {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-top: 0.2em;
 
-    &:hover { color: var(--global-link-color); text-decoration: underline; }
-  }
+  &--conference { background: #2f7f93; }   /* teal — matches site primary */
+  &--journal    { background: #5b8a3a; }   /* green */
+  &--workshop   { background: #8a6d3b; }   /* warm brown */
+  &--preprint   { background: #b04a3a; }   /* rust */
 }
 
 .pub-authors {
@@ -84,7 +114,7 @@
   font-size: 0.9em;
 }
 
-.pub-venue-badge {
+.pub-venue {
   font-weight: 600;
   font-style: italic;
   color: var(--global-text-color);
@@ -98,7 +128,6 @@
   font-weight: 600;
   line-height: 1.4;
 
-  &--preprint { background: #f0ad4e; color: #fff; }
   &--accepted { background: #5cb85c; color: #fff; }
   &--note     { background: var(--global-base-color); color: #fff; }
 }
@@ -120,18 +149,20 @@
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
-  padding: 0.15em 0.55em;
+  padding: 0.2em 0.7em;
   border: 1px solid var(--global-border-color);
   border-radius: 3px;
   color: var(--global-link-color);
   text-decoration: none;
   background: var(--global-bg-color);
   transition: all 0.15s ease;
+  font-weight: 500;
 
   &:hover {
     background: var(--global-base-color);
     color: #fff;
     border-color: var(--global-base-color);
+    text-decoration: none;
   }
 
   i { font-size: 0.95em; }

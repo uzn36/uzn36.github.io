@@ -5,6 +5,7 @@ permalink: /publication/2025-01-01-choi2025safeguarding
 date: 2025-08-20
 year: 2025
 status: published
+type: conference
 venue: "EMNLP Findings 2025"
 venue_full: "Findings of the Association for Computational Linguistics: EMNLP"
 authors:
