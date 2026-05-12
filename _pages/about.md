@@ -17,7 +17,7 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 
 ## Education
 * **Ph.D. in Industrial Engineering**, Seoul National University, 2026
-    * *Dissertation: Trustworthy Generative Model: from Privacy to Fairness*
+    * *Dissertation: [Trustworthy Generative Model: from Privacy to Fairness](https://s-space.snu.ac.kr/handle/10371/234094)*
 * **B.S. in Industrial Engineering and Mathematics**, Yonsei University, 2021
 
 ## News
