@@ -16,6 +16,6 @@ authors:
   - Junyoung Byun
 thumbnail: /images/pubs/26_EAAI_DPupsampling.png
 links:
-  paper: "https://doi.org/10.1016/j.engappai.2025.113124"
+  paper: "https://www.sciencedirect.com/science/article/abs/pii/S0952197625014927"
   bibtex: "/files/choi2026differentially.bib"
 ---

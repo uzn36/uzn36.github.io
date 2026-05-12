@@ -15,6 +15,6 @@ authors:
   - Jaewook Lee
 thumbnail: /images/pubs/23_ICML_DPSAT.png
 links:
-  paper: "https://proceedings.mlr.press/v202/park23o.html"
+  paper: "https://proceedings.mlr.press/v202/park23g/park23g.pdf"
   bibtex: "/files/park2023differentially.bib"
 ---

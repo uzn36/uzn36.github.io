@@ -16,6 +16,7 @@ authors:
   - Jinseong Park
 selected: true
 links:
-  paper: "https://aclanthology.org/2025.findings-emnlp.0/"
+  arxiv: "https://arxiv.org/abs/2408.06672"
+  paper: "https://arxiv.org/abs/2408.06672"
   bibtex: "/files/choi2025safeguarding.bib"
 ---
