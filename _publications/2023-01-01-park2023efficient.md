@@ -8,6 +8,7 @@ status: published
 type: journal
 venue: "Information Sciences"
 venue_full: "Information Sciences"
+rank: "Top 10%"
 authors:
   - Jinseong Park
   - Yujin Choi

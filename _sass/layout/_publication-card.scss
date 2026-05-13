@@ -91,7 +91,7 @@
   &--conference { background: #b8860b; }   /* dark yellow / goldenrod */
   &--journal    { background: #2f7f93; }   /* teal — matches site primary */
   &--workshop   { background: #8a6d3b; }   /* warm brown */
-  &--preprint   { background: #b04a3a; }   /* rust */
+  &--preprint   { background: #c0c0c0; color: #333; }   /* light gray */
 }
 
 .pub-authors {
@@ -131,6 +131,7 @@
 
   &--accepted { background: #5cb85c; color: #fff; }
   &--note     { background: var(--global-base-color); color: #fff; }
+  &--rank     { background: #d9534f; color: #fff; }
 }
 
 .pub-equal {

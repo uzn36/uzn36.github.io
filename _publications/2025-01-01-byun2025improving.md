@@ -8,6 +8,7 @@ status: published
 type: journal
 venue: "Pattern Recognition"
 venue_full: "Pattern Recognition"
+rank: "Top 10%"
 authors:
   - Junyoung Byun
   - Yujin Choi

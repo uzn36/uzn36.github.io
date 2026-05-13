@@ -8,6 +8,7 @@ status: published
 type: journal
 venue: "EAAI"
 venue_full: "Engineering Applications of Artificial Intelligence"
+rank: "Top 5%"
 authors:
   - Yujin Choi
   - Jinseong Park
