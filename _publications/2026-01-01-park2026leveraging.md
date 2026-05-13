@@ -1,5 +1,5 @@
 ---
-title: "Leveraging priors via diffusion bridge for time series generation"
+title: "TimeBridge: Better Diffusion Prior Design with Bridge Models for Time Series Generation"
 collection: publications
 permalink: /publication/2026-01-01-park2026leveraging
 date: 2025-11-15
@@ -17,6 +17,6 @@ authors:
 thumbnail: /images/pubs/26_KDD_Timebridege.png
 links:
   arxiv: "https://arxiv.org/abs/2408.06672"
-  paper: "https://arxiv.org/abs/2408.06672"
+  paper: "https://dl.acm.org/doi/abs/10.1145/3770854.3780195"
   bibtex: "/files/park2026leveraging.bib"
 ---
