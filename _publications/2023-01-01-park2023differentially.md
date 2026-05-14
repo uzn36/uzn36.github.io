@@ -6,7 +6,6 @@ date: 2023-07-01
 year: 2023
 status: published
 type: conference
-num: 1
 venue: "ICML 2023"
 venue_full: "International Conference on Machine Learning"
 authors:

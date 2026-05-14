@@ -6,7 +6,6 @@ date: 2025-11-20
 year: 2026
 status: published
 type: journal
-num: 8
 venue: "EAAI"
 venue_full: "Engineering Applications of Artificial Intelligence"
 rank: "Top 5%"

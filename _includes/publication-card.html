@@ -6,11 +6,11 @@
   {% if a contains "*" %}{% assign has_equal = true %}{% endif %}
 {% endfor %}
 
-{% comment %} Map type → label for the colored type badge (C1/J1/... numbered per CV) {% endcomment %}
+{% comment %} Map type → label for the colored type badge {% endcomment %}
 {% case pub.type %}
-  {% when "conference" %}{% assign type_label = "C" | append: pub.num %}
-  {% when "journal" %}{% assign type_label = "J" | append: pub.num %}
-  {% when "workshop" %}{% assign type_label = "W" | append: pub.num %}
+  {% when "conference" %}{% assign type_label = "Conference" %}
+  {% when "journal" %}{% assign type_label = "Journal" %}
+  {% when "workshop" %}{% assign type_label = "Workshop" %}
   {% when "preprint" %}{% assign type_label = "Preprint" %}
   {% else %}{% assign type_label = "" %}
 {% endcase %}

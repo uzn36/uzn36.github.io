@@ -6,7 +6,6 @@ date: 2025-11-15
 year: 2026
 status: accepted
 type: conference
-num: 7
 venue: "KDD 2026"
 venue_full: "ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
 authors:

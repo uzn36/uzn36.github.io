@@ -6,7 +6,6 @@ date: 2025-01-01
 year: 2025
 status: published
 type: journal
-num: 6
 venue: "Pattern Recognition"
 venue_full: "Pattern Recognition"
 rank: "Top 10%"
