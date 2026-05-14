@@ -6,6 +6,7 @@ date: 2025-08-20
 year: 2025
 status: published
 type: conference
+num: 5
 venue: "EMNLP Findings 2025"
 venue_full: "Findings of the Association for Computational Linguistics: EMNLP"
 authors:

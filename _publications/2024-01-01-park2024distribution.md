@@ -6,6 +6,7 @@ date: 2024-06-17
 year: 2024
 status: published
 type: conference
+num: 4
 venue: "CVPR 2024"
 venue_full: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition"
 authors:
