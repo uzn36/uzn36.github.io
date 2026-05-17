@@ -2,7 +2,7 @@
 title: "Efficient homomorphic encryption framework for privacy-preserving regression"
 collection: publications
 permalink: /publication/2023-01-01-byun2023efficient
-date: 2023-01-01
+date: 2023-05-01
 year: 2023
 status: published
 type: journal
