@@ -5,6 +5,29 @@ permalink: /activities/
 author_profile: true
 ---
 
+## Patents
+
+1. **Clustering method and apparatus supporting differential privacy**
+   * Registration No. 10-2815746, registered 2025.05.28
+   * Application No. 1020220185186, filed 2022.12.27
+
+2. **Apparatus and Method for Learning Differential Privacy Multi-Classification Based on Kernel Support Vector**
+   * Application No. 10-2023-0073178, filed 2023.06.07
+
+3. **Method and system for detecting adversarial speech example**
+   * Application No. 1020230087024, filed 2023.07.05
+
+---
+
+## Awards, Scholarships, & Fellowships
+
+* **Youlchon AI Scholarship**, Youlchon AI Star, 2025
+* **Doctoral Student Research Grant**, Ministry of Science and ICT, Korea (Graduate Research Fellowship in Science and Engineering), 2023–2025
+* **Samsung Best TA Award**, Samsung Data Scientist for Device Solution, 2021
+* **National Science and Technology Scholarship** (full tuition), Ministry of Science, Korea, 2019–2020
+
+---
+
 ## Academic Service
 
 ### Conference Reviewing
@@ -15,15 +38,6 @@ author_profile: true
 ### Journal Reviewing
 * **Pattern Recognition** — Reviewer
 * **Industrial Engineering & Management Systems** — Reviewer
-
----
-
-## Awards, Scholarships, & Fellowships
-
-* **Youlchon AI Scholarship**, Youlchon AI Star, 2025
-* **Doctoral Student Research Grant**, Ministry of Science and ICT, Korea (Graduate Research Fellowship in Science and Engineering), 2023–2025
-* **Samsung Best TA Award**, Samsung Data Scientist for Device Solution, 2021
-* **National Science and Technology Scholarship** (full tuition), Ministry of Science, Korea, 2019–2020
 
 ---
 
@@ -44,16 +58,3 @@ author_profile: true
 * **Samsung Data Scientist for Device Solution** — Optimization (2021–2025)
 * **Samsung Data Scientist for Device Solution** — Linear Algebra (2021–2022)
 
----
-
-## Patents
-
-1. **Clustering method and apparatus supporting differential privacy**
-   * Registration No. 10-2815746, registered 2025.05.28
-   * Application No. 1020220185186, filed 2022.12.27
-
-2. **Apparatus and Method for Learning Differential Privacy Multi-Classification Based on Kernel Support Vector**
-   * Application No. 10-2023-0073178, filed 2023.06.07
-
-3. **Method and system for detecting adversarial speech example**
-   * Application No. 1020230087024, filed 2023.07.05
