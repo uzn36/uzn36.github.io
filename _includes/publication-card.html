@@ -34,7 +34,8 @@
     <div class="pub-authors">
       {% for author in pub.authors %}
         {% assign clean = author | remove: "*" | strip %}
-        {% capture name %}{{ author }}{% if forloop.last %}&dagger;{% endif %}{% endcapture %}
+        {% capture marks %}{% if author contains "*" %}*{% endif %}{% if forloop.last %}&dagger;{% endif %}{% endcapture %}
+        {% capture name %}{{ clean }}{% if marks != "" %}<sup>{{ marks }}</sup>{% endif %}{% endcapture %}
         {% if clean == site.author.name %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% unless forloop.last %}, {% endunless %}
       {% endfor %}
     </div>
