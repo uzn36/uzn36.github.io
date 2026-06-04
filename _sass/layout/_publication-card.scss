@@ -188,6 +188,25 @@
   }
 }
 
+.news-more {
+  margin: 0.5em 0 1em;
+
+  summary {
+    cursor: pointer;
+    color: var(--global-link-color);
+    font-size: 0.9em;
+    font-weight: 500;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+    &::before { content: "▸ "; }
+
+    &:hover { color: var(--global-link-color-hover); }
+  }
+
+  &[open] summary::before { content: "▾ "; }
+}
+
 @media (max-width: 600px) {
   .pub-card { flex-direction: column; gap: 0.6em; }
   .pub-thumb { flex: 0 0 auto; width: 100%; height: 140px; }

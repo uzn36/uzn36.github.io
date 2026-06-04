@@ -27,6 +27,7 @@
 {% endfor %}
 
 {% assign events = events | sort | reverse %}
+{% assign total = events | size %}
 
 <ul class="news-feed">
   {% for e in events limit: news_limit %}
@@ -36,3 +37,17 @@
     <li><span class="news-date">[{{ date_str | date: "%m. %Y" }}]</span> {{ text | markdownify | remove: "<p>" | remove: "</p>" }}</li>
   {% endfor %}
 </ul>
+
+{% if total > news_limit %}
+  <details class="news-more">
+    <summary>Show older news ({{ total | minus: news_limit }})</summary>
+    <ul class="news-feed">
+      {% for e in events offset: news_limit %}
+        {% assign parts = e | split: "|||" %}
+        {% assign date_str = parts[0] %}
+        {% assign text = parts[1] %}
+        <li><span class="news-date">[{{ date_str | date: "%m. %Y" }}]</span> {{ text | markdownify | remove: "<p>" | remove: "</p>" }}</li>
+      {% endfor %}
+    </ul>
+  </details>
+{% endif %}
