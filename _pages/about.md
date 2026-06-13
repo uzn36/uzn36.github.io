@@ -29,7 +29,7 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 <div class="pub-list">
 {% assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
 {% for pub in selected %}
-  {% include publication-card.html pub=pub %}
+  {% include publication-card.html pub=pub full_label=true %}
 {% endfor %}
 </div>
 

@@ -10,8 +10,8 @@ num: 9
 venue: "MICCAI 2026"
 venue_full: "Medical Image Computing and Computer Assisted Intervention"
 authors:
-  - Woojin Jeong
-  - Yujin Choi
+  - Woojin Jeong*
+  - Yujin Choi*
   - Dongbin Kim
   - Soyeon Park
   - Jaewook Lee

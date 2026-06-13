@@ -91,10 +91,10 @@
   line-height: 1.4;
   text-transform: uppercase;
 
-  &--conference { background: #b8860b; }   /* dark yellow / goldenrod */
-  &--journal    { background: #2f7f93; }   /* teal — matches site primary */
-  &--workshop   { background: #8a6d3b; }   /* warm brown */
-  &--preprint   { background: #c0c0c0; color: #333; }   /* light gray */
+  &--conference { background: rgba(184, 134, 11, 0.15); color: #b8860b; }   /* goldenrod text on pale bg */
+  &--journal    { background: rgba(47, 127, 147, 0.15); color: #2f7f93; }   /* teal text on pale bg */
+  &--workshop   { background: rgba(138, 109, 59, 0.15); color: #8a6d3b; }   /* brown text on pale bg */
+  &--preprint   { background: rgba(0, 0, 0, 0.07); color: #555; }           /* gray text on pale bg */
 }
 
 .pub-authors {

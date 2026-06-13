@@ -6,14 +6,24 @@
   {% if a contains "*" %}{% assign has_equal = true %}{% endif %}
 {% endfor %}
 
-{% comment %} Map type → numbered label (C1/J1/P1 per CV ordering) {% endcomment %}
+{% comment %}
+  Map type → badge label.
+  Default: numbered (C1/J1/P1 per CV ordering).
+  Pass `full_label=true` to use full words (Conference/Journal/Preprint) — used on About page Selected list.
+{% endcomment %}
 {% case pub.type %}
-  {% when "conference" %}{% assign type_label = "C" | append: pub.num %}
-  {% when "journal" %}{% assign type_label = "J" | append: pub.num %}
-  {% when "workshop" %}{% assign type_label = "W" | append: pub.num %}
-  {% when "preprint" %}{% assign type_label = "P" | append: pub.num %}
-  {% else %}{% assign type_label = "" %}
+  {% when "conference" %}{% assign type_prefix = "C" %}{% assign type_full = "Conference" %}
+  {% when "journal" %}{% assign type_prefix = "J" %}{% assign type_full = "Journal" %}
+  {% when "workshop" %}{% assign type_prefix = "W" %}{% assign type_full = "Workshop" %}
+  {% when "preprint" %}{% assign type_prefix = "P" %}{% assign type_full = "Preprint" %}
+  {% else %}{% assign type_prefix = "" %}{% assign type_full = "" %}
 {% endcase %}
+
+{% if include.full_label %}
+  {% assign type_label = type_full %}
+{% else %}
+  {% assign type_label = type_prefix | append: pub.num %}
+{% endif %}
 
 <div class="pub-card">
   {% if pub.thumbnail %}
