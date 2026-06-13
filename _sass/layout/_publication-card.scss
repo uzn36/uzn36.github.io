@@ -132,9 +132,9 @@
   font-weight: 600;
   line-height: 1.4;
 
-  &--accepted { background: #5cb85c; color: #fff; }
-  &--note     { background: var(--global-base-color); color: #fff; }
-  &--rank     { background: #d9534f; color: #fff; }
+  &--accepted { background: rgba(92, 184, 92, 0.18); color: #3a8a3a; }    /* pale green */
+  &--note     { background: rgba(47, 127, 147, 0.15); color: #2f7f93; }   /* pale teal */
+  &--rank     { background: rgba(217, 83, 79, 0.18); color: #b03a36; }    /* pale red */
 }
 
 .pub-equal {
