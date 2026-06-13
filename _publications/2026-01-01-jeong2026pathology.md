@@ -2,7 +2,7 @@
 title: "Leveraging Pathology Co-occurrence for Test-Time Adaptation in Chest X-Ray Diagnosis"
 collection: publications
 permalink: /publication/2026-01-01-jeong2026pathology
-date: 2026-05-15
+date: 2026-09-27
 year: 2026
 status: accepted
 type: conference
