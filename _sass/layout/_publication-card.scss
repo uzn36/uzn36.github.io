@@ -63,11 +63,13 @@
 }
 
 .pub-title-line {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.45em;
   margin-bottom: 0.25em;
+  line-height: 1.4;
+
+  .pub-type {
+    margin-right: 0.4em;
+    vertical-align: 0.08em;
+  }
 }
 
 .pub-title {
