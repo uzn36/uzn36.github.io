@@ -18,4 +18,5 @@ thumbnail: /images/pubs/24_CVPR_Indist.png
 links:
   paper: "https://openaccess.thecvf.com/content/CVPR2024/html/Park_In-distribution_Public_Data_Synthesis_with_Diffusion_Models_for_Differentially_Private_CVPR_2024_paper.html"
   bibtex: "/files/park2024distribution.bib"
+  code: "https://github.com/JinseongP/DPTrainer"
 ---

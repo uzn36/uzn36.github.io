@@ -19,4 +19,5 @@ links:
   arxiv: "https://arxiv.org/abs/2412.09842"
   paper: "https://arxiv.org/abs/2412.09842"
   bibtex: "/files/choi2024leveraging.bib"
+  code: "https://github.com/uzn36/DP-SynGen"
 ---

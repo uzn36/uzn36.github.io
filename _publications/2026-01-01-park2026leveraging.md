@@ -20,4 +20,5 @@ links:
   arxiv: "https://arxiv.org/abs/2408.06672"
   paper: "https://dl.acm.org/doi/abs/10.1145/3770854.3780195"
   bibtex: "/files/park2026leveraging.bib"
+  code: "https://github.com/JinseongP/TimeBridge"
 ---

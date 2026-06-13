@@ -20,4 +20,5 @@ thumbnail: /images/pubs/23_inforsci_dpsvdd.png
 links:
   paper: "https://www.sciencedirect.com/science/article/abs/pii/S0020025522011951"
   bibtex: "/files/park2023efficient.bib"
+  code: "https://github.com/JinseongP/DP-SVDD"
 ---
