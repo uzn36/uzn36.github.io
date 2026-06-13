@@ -6,6 +6,7 @@ date: 2026-06-13
 year: 2026
 status: accepted
 type: conference
+num: 9
 venue: "MICCAI 2026"
 venue_full: "Medical Image Computing and Computer Assisted Intervention"
 authors:

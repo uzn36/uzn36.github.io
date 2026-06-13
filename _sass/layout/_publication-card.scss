@@ -64,8 +64,9 @@
 
 .pub-title-line {
   display: flex;
-  align-items: flex-start;
-  gap: 0.5em;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45em;
   margin-bottom: 0.25em;
 }
 

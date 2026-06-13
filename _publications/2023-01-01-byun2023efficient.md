@@ -6,6 +6,7 @@ date: 2023-05-01
 year: 2023
 status: published
 type: journal
+num: 3
 venue: "Applied Intelligence"
 venue_full: "Applied Intelligence"
 authors:
