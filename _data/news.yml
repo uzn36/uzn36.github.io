@@ -3,16 +3,16 @@
 # Each entry: date (YYYY-MM-DD), text (markdown allowed).
 
 - date: 2026-04-01
-  text: "Joined **NTU** as a Postdoctoral Researcher."
+  text: "Joined *NTU* as a Postdoctoral Researcher."
 
 - date: 2026-03-01
-  text: "Joined **UNIST** as a Postdoctoral Researcher."
+  text: "Joined *UNIST* as a Postdoctoral Researcher."
 
 - date: 2026-02-01
-  text: "Successfully awarded my Ph.D. from **Seoul National University**."
+  text: "Successfully awarded my Ph.D. from *Seoul National University*."
 
 - date: 2025-08-26
-  text: "Selected as a **Youlchon AI Star**, recipient of the Youlchon AI Scholarship."
+  text: "Selected as a ***Youlchon AI Star***, recipient of the Youlchon AI Scholarship."
 
 - date: 2023-09-01
-  text: "Selected for the **Doctoral Student Research Grant** (Ministry of Science and ICT, Korea) with the project *Safe Generative Model* (2023-2025)."
+  text: "Selected for the ***Doctoral Student Research Grant*** (Ministry of Science and ICT, Korea) with the project *Safe Generative Model* (2023-2025)."
