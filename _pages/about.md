@@ -16,9 +16,9 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 * **Generative Models**: Enhancing safety and utility in Diffusion models, Flow matching, and Large Language Models (LLMs).
 
 ## Education
-* **Ph.D. in Industrial Engineering**, Seoul National University, 2026
+* **Ph.D.** in **Industrial Engineering**, Seoul National University, 2026
     * *Dissertation: [Trustworthy Generative Model: from Privacy to Fairness](https://s-space.snu.ac.kr/handle/10371/234094)*
-* **B.S. in Industrial Engineering** and **Mathematics**, Yonsei University, 2021
+* **B.S.** in **Industrial Engineering** and **Mathematics**, Yonsei University, 2021
 
 ## News
 
