@@ -1,26 +1,93 @@
 {% comment %}
   Builds a unified News feed by merging:
-    1. Publications with status "accepted" or "published" (one event each).
+    1. Publications with status "accepted" or "published" — grouped by month so that
+       multiple acceptances in the same month appear as a single combined news entry
+       ("Two papers got accepted to *A* and *B*.").
     2. Manual entries in _data/news.yml (joins, awards, etc.).
-  Events are sorted descending by date and capped at `limit` (default 10).
+  Events are sorted descending by date; older items hidden behind a <details> toggle.
   Usage: {% include news-feed.html limit=10 %}
 {% endcomment %}
 
 {% assign news_limit = include.limit | default: 10 %}
-{% assign events = "" | split: "" %}
 
+{% comment %} Step 1: collect paper records as "month|||fulldate|||KIND|||payload" {% endcomment %}
+{% assign paper_records = "" | split: "" %}
 {% for pub in site.publications %}
   {% if pub.status == "accepted" or pub.status == "published" %}
+    {% assign month = pub.date | date: "%Y-%m" %}
+    {% assign full_date = pub.date | date: "%Y-%m-%d" %}
     {% if pub.news_text %}
-      {% assign text = pub.news_text %}
+      {% capture rec %}{{ month }}|||{{ full_date }}|||CUSTOM|||{{ pub.news_text }}{% endcapture %}
     {% else %}
-      {% capture text %}One paper got accepted to *{{ pub.venue }}*.{% endcapture %}
+      {% capture rec %}{{ month }}|||{{ full_date }}|||VENUE|||{{ pub.venue }}{% endcapture %}
     {% endif %}
-    {% capture event %}{{ pub.date | date: "%Y-%m-%d" }}|||{{ text }}{% endcapture %}
-    {% assign events = events | push: event %}
+    {% assign paper_records = paper_records | push: rec %}
   {% endif %}
 {% endfor %}
 
+{% comment %} Step 2: collect unique months {% endcomment %}
+{% assign months = "" | split: "" %}
+{% for r in paper_records %}
+  {% assign p = r | split: "|||" %}
+  {% unless months contains p[0] %}
+    {% assign months = months | push: p[0] %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %} Step 3: build combined event per month from venues; keep custom news_text separate {% endcomment %}
+{% assign events = "" | split: "" %}
+{% for m in months %}
+  {% assign month_records = "" | split: "" %}
+  {% for r in paper_records %}
+    {% assign p = r | split: "|||" %}
+    {% if p[0] == m %}
+      {% assign month_records = month_records | push: r %}
+    {% endif %}
+  {% endfor %}
+  {% assign month_records = month_records | sort %}
+
+  {% assign month_venues = "" | split: "" %}
+  {% assign max_date = "" %}
+  {% for r in month_records %}
+    {% assign p = r | split: "|||" %}
+    {% if p[1] > max_date %}{% assign max_date = p[1] %}{% endif %}
+    {% if p[2] == "VENUE" %}
+      {% assign month_venues = month_venues | push: p[3] %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign vcount = month_venues | size %}
+  {% if vcount > 0 %}
+    {% if vcount == 1 %}
+      {% capture text %}One paper got accepted to *{{ month_venues[0] }}*.{% endcapture %}
+    {% elsif vcount == 2 %}
+      {% capture text %}Two papers got accepted to *{{ month_venues[0] }}* and *{{ month_venues[1] }}*.{% endcapture %}
+    {% else %}
+      {% capture vlist %}{% for v in month_venues %}{% if forloop.last %}, and *{{ v }}*{% elsif forloop.first %}*{{ v }}*{% else %}, *{{ v }}*{% endif %}{% endfor %}{% endcapture %}
+      {% assign count_words = "Three,Four,Five,Six,Seven,Eight,Nine,Ten" | split: "," %}
+      {% assign idx = vcount | minus: 3 %}
+      {% if idx < 8 %}
+        {% assign count_word = count_words[idx] %}
+      {% else %}
+        {% assign count_word = vcount %}
+      {% endif %}
+      {% capture text %}{{ count_word }} papers got accepted to {{ vlist }}.{% endcapture %}
+    {% endif %}
+    {% capture event %}{{ max_date }}|||{{ text }}{% endcapture %}
+    {% assign events = events | push: event %}
+  {% endif %}
+
+  {% comment %} Each custom news_text stays as its own line (don't auto-merge custom phrasing) {% endcomment %}
+  {% for r in month_records %}
+    {% assign p = r | split: "|||" %}
+    {% if p[2] == "CUSTOM" %}
+      {% capture event %}{{ p[1] }}|||{{ p[3] }}{% endcapture %}
+      {% assign events = events | push: event %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% comment %} Step 4: add manual entries {% endcomment %}
 {% for n in site.data.news %}
   {% capture event %}{{ n.date | date: "%Y-%m-%d" }}|||{{ n.text }}{% endcapture %}
   {% assign events = events | push: event %}
