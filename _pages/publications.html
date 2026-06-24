@@ -12,10 +12,11 @@ author_profile: true
     <span style="margin-left:0.6em;"><strong>*</strong> Equal contribution.</span>
     <span style="margin-left:0.6em;"><strong>&dagger;</strong> Corresponding author.</span>
   </p>
-  <p class="pub-legend">
-    <span class="pub-type pub-type--conference">Conference</span>
-    <span class="pub-type pub-type--journal">Journal</span>
-    <span class="pub-type pub-type--preprint">Preprint</span>
+  <p class="pub-legend" id="pub-filter">
+    <span class="pub-type pub-type--conference" data-filter="conference" role="button" tabindex="0">Conference</span>
+    <span class="pub-type pub-type--journal" data-filter="journal" role="button" tabindex="0">Journal</span>
+    <span class="pub-type pub-type--preprint" data-filter="preprint" role="button" tabindex="0">Preprint</span>
+    <span class="pub-filter-hint">— click to filter</span>
   </p>
 {% endif %}
 
@@ -45,3 +46,45 @@ author_profile: true
     {% endif %}
   {% endfor %}
 {% endfor %}
+
+<script>
+(function () {
+  var legend = document.getElementById('pub-filter');
+  if (!legend) return;
+  var buttons = legend.querySelectorAll('[data-filter]');
+  var cards = document.querySelectorAll('.pub-card[data-type]');
+  var headings = document.querySelectorAll('.pub-year-heading');
+  var active = null;
+
+  function apply(filter) {
+    cards.forEach(function (c) {
+      c.style.display = (filter == null || c.dataset.type === filter) ? '' : 'none';
+    });
+    headings.forEach(function (h) {
+      var n = h.nextElementSibling, visible = false;
+      while (n && !n.classList.contains('pub-year-heading')) {
+        if (n.classList.contains('pub-card') && n.style.display !== 'none') { visible = true; break; }
+        n = n.nextElementSibling;
+      }
+      h.style.display = visible ? '' : 'none';
+    });
+    buttons.forEach(function (b) {
+      b.classList.toggle('is-active', filter != null && b.dataset.filter === filter);
+      b.classList.toggle('is-dimmed', filter != null && b.dataset.filter !== filter);
+    });
+  }
+
+  function onClick(e) {
+    var f = e.currentTarget.dataset.filter;
+    active = (active === f) ? null : f;
+    apply(active);
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', onClick);
+    b.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(e); }
+    });
+  });
+})();
+</script>

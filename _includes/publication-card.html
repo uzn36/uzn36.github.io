@@ -25,7 +25,7 @@
   {% assign type_label = type_prefix | append: pub.num %}
 {% endif %}
 
-<div class="pub-card">
+<div class="pub-card" data-type="{{ pub.type }}">
   {% if pub.thumbnail %}
     <div class="pub-thumb">
       <img src="{{ pub.thumbnail | relative_url }}" alt="{{ pub.title | escape }}">
