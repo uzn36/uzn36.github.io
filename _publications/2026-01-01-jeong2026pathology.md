@@ -16,4 +16,6 @@ authors:
   - Soyeon Park
   - Jaewook Lee
 thumbnail: /images/pubs/26_MICCAI_CoWA.png
+links:
+  arxiv: "https://arxiv.org/abs/2607.03715"
 ---
