@@ -1,1 +1,1 @@
-uzn36.github.io
+https://uzn36.github.io/
