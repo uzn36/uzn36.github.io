@@ -23,6 +23,16 @@
     @include suffix(2 of 12);
   }
 
+  #main.no-sidebar & {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+  }
+
   .page__inner-wrap {
     @include full();
 

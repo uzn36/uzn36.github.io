@@ -1,11 +1,13 @@
 ---
 permalink: /
 title: "About Me"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+{% include profile-header.html %}
 
 I am a **Postdoctoral Researcher** at **Nanyang Technological University (NTU)** in Singapore, hosted by [Prof. Jaehong Yoon](https://jaehong31.github.io/) and **Ulsan National Institute of Science and Technology (UNIST)** in Korea, mentored by [Prof. Saerom Park](https://sites.google.com/view/safe-ai-lab/home). I received my **Ph.D.** in Industrial Engineering from **Seoul National University (SNU)**, advised by [Prof. Jaewook Lee](https://safeai.snu.ac.kr/home).
 

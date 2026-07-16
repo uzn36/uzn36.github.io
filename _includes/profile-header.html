@@ -1,0 +1,44 @@
+{% include base_path %}
+{% assign author = site.author %}
+
+<div class="profile-header">
+  <div class="profile-header__avatar">
+    {% if author.avatar contains "://" %}
+      <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high"/>
+    {% else %}
+      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" fetchpriority="high"/>
+    {% endif %}
+  </div>
+
+  <div class="profile-header__info">
+    <h1 class="profile-header__name">{{ author.name }}</h1>
+    {% if author.bio %}<p class="profile-header__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.location or author.employer %}
+      <p class="profile-header__meta">
+        {% if author.employer %}<span><i class="fas fa-building-columns" aria-hidden="true"></i> {{ author.employer }}</span>{% endif %}
+        {% if author.location %}<span><i class="fas fa-location-dot" aria-hidden="true"></i> {{ author.location }}</span>{% endif %}
+      </p>
+    {% endif %}
+
+    <ul class="profile-header__links">
+      {% if author.email %}
+        <li><a href="mailto:{{ author.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+      {% endif %}
+      {% if author.googlescholar %}
+        <li><a href="{{ author.googlescholar }}" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      {% endif %}
+      {% if author.orcid %}
+        <li><a href="{{ author.orcid }}" aria-label="ORCID"><i class="ai ai-orcid"></i></a></li>
+      {% endif %}
+      {% if author.github %}
+        <li><a href="https://github.com/{{ author.github }}" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+      {% endif %}
+      {% if author.linkedin %}
+        <li><a href="https://linkedin.com/in/{{ author.linkedin }}" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      {% endif %}
+      {% if author.twitter %}
+        <li><a href="https://twitter.com/{{ author.twitter }}" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
