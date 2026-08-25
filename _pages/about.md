@@ -9,7 +9,7 @@ redirect_from:
 
 {% include profile-header.html %}
 
-I am an **Assistant Professor** at **Sejong University**. Prior to joining Sejong University, I was a Postdoctoral Researcher at **Nanyang Technological University (NTU)** in Singapore, hosted by [Prof. Jaehong Yoon](https://jaehong31.github.io/) and **Ulsan National Institute of Science and Technology (UNIST)** in Korea, mentored by [Prof. Saerom Park](https://sites.google.com/view/safe-ai-lab/home). I received my **Ph.D.** in Industrial Engineering from **Seoul National University (SNU)**, advised by [Prof. Jaewook Lee](https://safeai.snu.ac.kr/home).
+I am an **Assistant Professor** at the **Department of Computer Science and Engineering**, *Sejong University*. Prior to joining Sejong University, I was a Postdoctoral Researcher at **Nanyang Technological University (NTU)** in Singapore, hosted by [Prof. Jaehong Yoon](https://jaehong31.github.io/) and **Ulsan National Institute of Science and Technology (UNIST)** in Korea, mentored by [Prof. Saerom Park](https://sites.google.com/view/safe-ai-lab/home). I received my **Ph.D.** in Industrial Engineering from **Seoul National University (SNU)**, advised by [Prof. Jaewook Lee](https://safeai.snu.ac.kr/home).
 
 My research focuses on building **Trustworthy AI**, with a particular emphasis on ensuring the privacy, fairness, and robustness of machine learning systems. 
 
