@@ -14,7 +14,7 @@ I am an **Assistant Professor** at the **Department of Computer Science and Engi
 My research focuses on building **Trustworthy AI**, with a particular emphasis on ensuring the privacy, fairness, and robustness of machine learning systems. 
 
 ## Research Interests
-* **Trustworthy AI**: Privacy-preserving machine learning (differential privacy, attacks/defense) and fairness.
+* **Trustworthy AI**: Privacy-preserving machine learning (differential privacy, attack/defense) and fairness.
 * **Generative Models**: Enhancing safety and utility in Diffusion models, Flow matching, and Large Language Models (LLMs).
 
 ## Education
