@@ -68,24 +68,14 @@
   {% if vcount > 0 %}
     {% if ucount < vcount %}
       {% comment %} Same venue appears more than once: count per venue, e.g. "Three papers got accepted: two to *A* and one to *B*." {% endcomment %}
-      {% assign venue_counts = "" | split: "" %}
+      {% comment %} uniq_venues is already ordered by earliest acceptance date in the month {% endcomment %}
+      {% assign items = "" | split: "" %}
       {% for u in uniq_venues %}
         {% assign cnt = 0 %}
         {% for v in month_venues %}{% if v == u %}{% assign cnt = cnt | plus: 1 %}{% endif %}{% endfor %}
-        {% capture vc %}{{ cnt }}::{{ u }}{% endcapture %}
-        {% assign venue_counts = venue_counts | push: vc %}
-      {% endfor %}
-      {% assign items = "" | split: "" %}
-      {% for c in (1..vcount) reversed %}
-        {% for vc in venue_counts %}
-          {% assign q = vc | split: "::" %}
-          {% assign qc = q[0] | plus: 0 %}
-          {% if qc == c %}
-            {% if c <= 10 %}{% assign cw = num_words[c] %}{% else %}{% assign cw = c %}{% endif %}
-            {% capture item %}{{ cw }} to *{{ q[1] }}*{% endcapture %}
-            {% assign items = items | push: item %}
-          {% endif %}
-        {% endfor %}
+        {% if cnt <= 10 %}{% assign cw = num_words[cnt] %}{% else %}{% assign cw = cnt %}{% endif %}
+        {% capture item %}{{ cw }} to *{{ u }}*{% endcapture %}
+        {% assign items = items | push: item %}
       {% endfor %}
       {% if vcount <= 10 %}{% assign total_word = num_words[vcount] | capitalize %}{% else %}{% assign total_word = vcount %}{% endif %}
       {% if ucount == 1 %}
