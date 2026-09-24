@@ -57,8 +57,45 @@
   {% endfor %}
 
   {% assign vcount = month_venues | size %}
+  {% assign uniq_venues = "" | split: "" %}
+  {% for v in month_venues %}
+    {% unless uniq_venues contains v %}
+      {% assign uniq_venues = uniq_venues | push: v %}
+    {% endunless %}
+  {% endfor %}
+  {% assign ucount = uniq_venues | size %}
+  {% assign num_words = "zero,one,two,three,four,five,six,seven,eight,nine,ten" | split: "," %}
   {% if vcount > 0 %}
-    {% if vcount == 1 %}
+    {% if ucount < vcount %}
+      {% comment %} Same venue appears more than once: count per venue, e.g. "Three papers got accepted: two to *A* and one to *B*." {% endcomment %}
+      {% assign venue_counts = "" | split: "" %}
+      {% for u in uniq_venues %}
+        {% assign cnt = 0 %}
+        {% for v in month_venues %}{% if v == u %}{% assign cnt = cnt | plus: 1 %}{% endif %}{% endfor %}
+        {% capture vc %}{{ cnt }}::{{ u }}{% endcapture %}
+        {% assign venue_counts = venue_counts | push: vc %}
+      {% endfor %}
+      {% assign items = "" | split: "" %}
+      {% for c in (1..vcount) reversed %}
+        {% for vc in venue_counts %}
+          {% assign q = vc | split: "::" %}
+          {% assign qc = q[0] | plus: 0 %}
+          {% if qc == c %}
+            {% if c <= 10 %}{% assign cw = num_words[c] %}{% else %}{% assign cw = c %}{% endif %}
+            {% capture item %}{{ cw }} to *{{ q[1] }}*{% endcapture %}
+            {% assign items = items | push: item %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      {% if vcount <= 10 %}{% assign total_word = num_words[vcount] | capitalize %}{% else %}{% assign total_word = vcount %}{% endif %}
+      {% if ucount == 1 %}
+        {% capture text %}{{ total_word }} papers got accepted to *{{ uniq_venues[0] }}*.{% endcapture %}
+      {% elsif ucount == 2 %}
+        {% capture text %}{{ total_word }} papers got accepted: {{ items[0] }} and {{ items[1] }}.{% endcapture %}
+      {% else %}
+        {% capture text %}{{ total_word }} papers got accepted: {% for it in items %}{% if forloop.last %}, and {{ it }}{% elsif forloop.first %}{{ it }}{% else %}, {{ it }}{% endif %}{% endfor %}.{% endcapture %}
+      {% endif %}
+    {% elsif vcount == 1 %}
       {% capture text %}One paper got accepted to *{{ month_venues[0] }}*.{% endcapture %}
     {% elsif vcount == 2 %}
       {% capture text %}Two papers got accepted to *{{ month_venues[0] }}* and *{{ month_venues[1] }}*.{% endcapture %}
