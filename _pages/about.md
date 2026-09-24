@@ -29,7 +29,9 @@ My research focuses on building **Trustworthy AI**, with a particular emphasis o
 ## Selected Publications
 
 <div class="pub-list">
-{% assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
+{% assign selected_pubs = site.publications | where: "selected", true %}
+{% include sort-publications.html pubs=selected_pubs %}
+{% assign selected = sorted_pubs %}
 {% for pub in selected %}
   {% include publication-card.html pub=pub full_label=true %}
 {% endfor %}

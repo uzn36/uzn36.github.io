@@ -21,13 +21,14 @@ author_profile: false
 {% endif %}
 
 {% comment %}
-  Sort all publications by `date` (chronological), descending.
+  Sort all publications by `date` (chronological), descending; same-date ties by `num` descending.
   Group by display year: use `year` field if set, else fall back to year-of-date.
   We use `capture` for display_year to ensure string comparison works
   (frontmatter `year:` is parsed as integer by YAML; mixing int and string breaks `contains`).
 {% endcomment %}
 
-{% assign all_pubs = site.publications | sort: 'date' | reverse %}
+{% include sort-publications.html pubs=site.publications %}
+{% assign all_pubs = sorted_pubs %}
 {% assign years_seen = "" | split: "" %}
 
 {% for pub in all_pubs %}

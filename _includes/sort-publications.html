@@ -1,0 +1,19 @@
+{% comment %}
+  Sorts publications by `date` descending; ties on the same date are broken by `num` descending.
+  Usage: {% include sort-publications.html pubs=site.publications %}
+  Result is assigned to `sorted_pubs`.
+{% endcomment %}
+{% assign sort_keys = "" | split: "" %}
+{% for p in include.pubs %}
+  {% assign padded_num = p.num | default: 0 | plus: 10000 %}
+  {% capture k %}{{ p.date | date: "%Y-%m-%d" }}|{{ padded_num }}|{{ p.id }}{% endcapture %}
+  {% assign sort_keys = sort_keys | push: k %}
+{% endfor %}
+{% assign sort_keys = sort_keys | sort | reverse %}
+{% assign sorted_pubs = "" | split: "" %}
+{% for k in sort_keys %}
+  {% assign kid = k | split: "|" | last %}
+  {% for p in include.pubs %}
+    {% if p.id == kid %}{% assign sorted_pubs = sorted_pubs | push: p %}{% break %}{% endif %}
+  {% endfor %}
+{% endfor %}
