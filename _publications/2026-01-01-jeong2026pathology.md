@@ -18,4 +18,5 @@ authors:
 thumbnail: /images/pubs/26_MICCAI_CoWA.png
 links:
   arxiv: "https://arxiv.org/abs/2607.03715"
+  paper: "https://papers.miccai.org/miccai-2026/paper/4786_paper.pdf"
 ---
