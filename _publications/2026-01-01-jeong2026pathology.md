@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2026-01-01-jeong2026pathology
 date: 2026-06-13
 year: 2026
-status: accepted
+status: published
 type: conference
 num: 9
 venue: "MICCAI 2026"
