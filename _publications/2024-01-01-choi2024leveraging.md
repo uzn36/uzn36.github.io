@@ -6,7 +6,6 @@ date: 2024-12-13
 year: 2024
 status: preprint
 type: preprint
-num: 2
 venue: "arXiv"
 venue_full: "arXiv preprint"
 authors:

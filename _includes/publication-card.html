@@ -19,10 +19,23 @@
   {% else %}{% assign type_prefix = "" %}{% assign type_full = "" %}
 {% endcase %}
 
+{% comment %}
+  Number is computed automatically: rank of this pub among pubs of the same type, oldest `date` = 1.
+  Same-date ties are ordered by the time in `date` (e.g. 2026-09-25 12:00:00), then by filename.
+  Keep the key format in sync with _includes/sort-publications.html.
+{% endcomment %}
 {% if include.full_label %}
   {% assign type_label = type_full %}
 {% else %}
-  {% assign type_label = type_prefix | append: pub.num %}
+  {% capture my_key %}{{ pub.date | date: "%Y-%m-%d %H:%M:%S" }}|{{ pub.id }}{% endcapture %}
+  {% assign auto_num = 1 %}
+  {% for p in site.publications %}
+    {% if p.type == pub.type %}
+      {% capture p_key %}{{ p.date | date: "%Y-%m-%d %H:%M:%S" }}|{{ p.id }}{% endcapture %}
+      {% if p_key < my_key %}{% assign auto_num = auto_num | plus: 1 %}{% endif %}
+    {% endif %}
+  {% endfor %}
+  {% assign type_label = type_prefix | append: auto_num %}
 {% endif %}
 
 <div class="pub-card" data-type="{{ pub.type }}">

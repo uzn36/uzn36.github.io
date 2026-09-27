@@ -1,12 +1,12 @@
 {% comment %}
-  Sorts publications by `date` descending; ties on the same date are broken by `num` descending.
+  Sorts publications by `date` descending. Same-date ties are ordered by the time in `date`
+  (e.g. 2026-09-25 12:00:00), then by filename — the same key publication-card.html uses for numbering.
   Usage: {% include sort-publications.html pubs=site.publications %}
   Result is assigned to `sorted_pubs`.
 {% endcomment %}
 {% assign sort_keys = "" | split: "" %}
 {% for p in include.pubs %}
-  {% assign padded_num = p.num | default: 0 | plus: 10000 %}
-  {% capture k %}{{ p.date | date: "%Y-%m-%d" }}|{{ padded_num }}|{{ p.id }}{% endcapture %}
+  {% capture k %}{{ p.date | date: "%Y-%m-%d %H:%M:%S" }}|{{ p.id }}{% endcapture %}
   {% assign sort_keys = sort_keys | push: k %}
 {% endfor %}
 {% assign sort_keys = sort_keys | sort | reverse %}

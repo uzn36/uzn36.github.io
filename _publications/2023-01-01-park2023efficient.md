@@ -6,7 +6,6 @@ date: 2023-01-01
 year: 2023
 status: published
 type: journal
-num: 1
 venue: "Information Sciences"
 venue_full: "Information Sciences"
 rank: "Top 10%"

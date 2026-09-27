@@ -6,7 +6,6 @@ date: 2023-01-04
 year: 2023
 status: published
 type: journal
-num: 2
 venue: "IEEE Access"
 venue_full: "IEEE Access"
 authors:

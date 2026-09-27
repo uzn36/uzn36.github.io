@@ -21,7 +21,7 @@ author_profile: false
 {% endif %}
 
 {% comment %}
-  Sort all publications by `date` (chronological), descending; same-date ties by `num` descending.
+  Sort all publications by `date` (chronological), descending; same-date ties by time in `date`.
   Group by display year: use `year` field if set, else fall back to year-of-date.
   We use `capture` for display_year to ensure string comparison works
   (frontmatter `year:` is parsed as integer by YAML; mixing int and string breaks `contains`).
