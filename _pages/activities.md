@@ -28,6 +28,12 @@ author_profile: false
 
 ---
 
+## Invited Talks
+
+* **"Trustworthy AI"** — UNIST Industrial Engineering Relay Seminar, Ulsan National Institute of Science and Technology (UNIST), Sep 2026
+
+---
+
 ## Academic Service 
 
 ### Conference Reviewing
@@ -40,9 +46,13 @@ Pattern Recognition, Industrial Engineering & Management Systems, Cluster Comput
 
 ## Teaching Experience
 
-### Lecturer
-* **Financial Machine Learning** — Soongsil University, School of Finance (Spring 2025)
-* **Financial Programming 2** — Soongsil University, School of Finance (Fall 2024)
+### Assistant Professor, Sejong University
+* **Mathematics for Engineers I** — English-medium instruction for exchange students (Fall 2026)
+* **Software Engineering** (Fall 2026)
+
+### Lecturer, Soongsil University
+* **Financial Machine Learning** — School of Finance (Spring 2025)
+* **Financial Programming 2** — School of Finance (Fall 2024)
 
 ### Teaching Assistant, Seoul National University
 * **Mathematical Methods for Industrial Management** — Department of Industrial Engineering, Prof. Jaewook Lee (2022)
