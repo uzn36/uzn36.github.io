@@ -37,10 +37,10 @@ author_profile: false
 ## Academic Service 
 
 ### Conference Reviewing
-NeurIPS 2026, ICML Workshops 2026, MICCAI 2026 
+ICLR 2026, NeurIPS 2026, ICML Workshops 2026, MICCAI 2026
 
 ### Journal Reviewing
-Pattern Recognition, Industrial Engineering & Management Systems, Cluster Computing
+IEEE Transactions on Pattern Analysis and Machine Intelligence, Pattern Recognition, Industrial Engineering & Management Systems, Cluster Computing
 
 ---
 
