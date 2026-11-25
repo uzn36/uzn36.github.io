@@ -2,12 +2,13 @@
 title: "Leveraging Programmatically Generated Synthetic Data for Differentially Private Diffusion Training"
 collection: publications
 permalink: /publication/2024-01-01-choi2024leveraging
-date: 2024-12-13
-year: 2024
-status: preprint
-type: preprint
-venue: "arXiv"
-venue_full: "arXiv preprint"
+date: 2026-11-26
+year: 2026
+status: accepted
+type: journal
+venue: "Information Sciences"
+venue_full: "Information Sciences"
+rank: "Top 10%"
 authors:
   - Yujin Choi
   - Jinseong Park
