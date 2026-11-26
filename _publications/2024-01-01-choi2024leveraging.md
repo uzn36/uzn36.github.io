@@ -14,7 +14,7 @@ authors:
   - Jinseong Park
   - Junyoung Byun
   - Jaewook Lee
-thumbnail: /images/pubs/26_INS_DPSynGen.pdf
+thumbnail: /images/pubs/26_INS_DPSynGen.png
 links:
   arxiv: "https://arxiv.org/abs/2412.09842"
   # paper: "https://arxiv.org/abs/2412.09842"
