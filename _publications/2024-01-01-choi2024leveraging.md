@@ -1,5 +1,5 @@
 ---
-title: "Leveraging Programmatically Generated Synthetic Data for Differentially Private Diffusion Training"
+title: "Leveraging Programmatically Generated Synthetic Data for Differentially Private Diffusion"
 collection: publications
 permalink: /publication/2024-01-01-choi2024leveraging
 date: 2026-11-26
