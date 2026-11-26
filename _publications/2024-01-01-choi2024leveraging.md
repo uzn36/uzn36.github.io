@@ -8,16 +8,16 @@ status: accepted
 type: journal
 venue: "Information Sciences"
 venue_full: "Information Sciences"
-rank: "Top 10%"
+rank: "Q1"
 authors:
   - Yujin Choi
   - Jinseong Park
   - Junyoung Byun
   - Jaewook Lee
-thumbnail: /images/pubs/24_programmatically.png
+thumbnail: /images/pubs/26_INS_DPSynGen.pdf
 links:
   arxiv: "https://arxiv.org/abs/2412.09842"
-  paper: "https://arxiv.org/abs/2412.09842"
+  # paper: "https://arxiv.org/abs/2412.09842"
   bibtex: "/files/choi2024leveraging.bib"
   code: "https://github.com/uzn36/DP-SynGen"
 ---
